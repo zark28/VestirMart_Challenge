@@ -1,0 +1,67 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --pm-red: #f03333;
+  --pm-blue-black: #111827;
+  --pm-blue-light: #1b2740;
+  --pm-white: #ffffff;
+  --sc-white: #9ca3af;
+  --sc-white-dark: #54575e;
+  --pm-dark: #272729;
+}
+:root {
+  --color-text: var(--pm-white);
+  --color-suptext: var(--sc-white);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  width: 100dvw;
+  color: var(--color-text);
+  background: var(--pm-dark);
+  transition: all 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--pm-white);
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.flex-center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    background: var(--pm-white);
+  }
+}
